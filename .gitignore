@@ -1,0 +1,20 @@
+.DS_Store
+outputs/
+NCAI_*.md
+homepage-mvp-ia.md
+
+# Source/raw media are kept locally only.
+Homepage/Resource/
+Homepage/Brand/
+Homepage/logo-trend-concepts.html
+Homepage/season0-winning-games-showcase.md
+
+# Generated assets not referenced by the homepage.
+Homepage/assets/images/pic04.webp
+Homepage/assets/images/pic08.webp
+Homepage/assets/images/pic09.webp
+Homepage/assets/images/pic10.webp
+Homepage/assets/images/pic11.webp
+Homepage/assets/clips/hero-loop.webp
+Homepage/assets/clips/workflow-loop.webp
+Homepage/assets/meta/logo-lockup.svg
