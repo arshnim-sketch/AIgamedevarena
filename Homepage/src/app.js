@@ -61,7 +61,7 @@
           <p>AI와 함께 만드는 새로운 게임 개발 아레나.</p>
         </div>
         <div class="footer-links">
-          <a href="mailto:arshnim@naver.com">Contact</a>
+          <a href="mailto:aigamedevarena@gmail.com">Contact</a>
           <a href="#partner">Partners</a>
           <a href="#participants">Participants</a>
         </div>
