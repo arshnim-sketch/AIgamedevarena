@@ -1093,7 +1093,7 @@ input {
 
 .site-footer {
   position: relative;
-  padding: calc(var(--space-7) + 34px) 0 var(--space-5);
+  padding: var(--space-6) 0 var(--space-5);
   color: var(--muted);
   background: #080b10;
 }
@@ -1102,7 +1102,7 @@ input {
   content: "";
   position: absolute;
   inset: 0 0 auto;
-  height: 34px;
+  height: 18px;
   border-top: 1px solid rgba(248, 250, 252, 0.1);
   background: linear-gradient(180deg, rgba(248, 250, 252, 0.045), transparent);
   pointer-events: none;
