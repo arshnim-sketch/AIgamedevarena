@@ -1061,4 +1061,8 @@ input {
   [data-parallax-speed] {
     transform: none !important;
   }
+
+  .hero__media[data-parallax-speed] {
+    transform: scaleX(-1) scale(1.05) !important;
+  }
 }
