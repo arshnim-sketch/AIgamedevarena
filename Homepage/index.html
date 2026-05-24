@@ -17,7 +17,8 @@
     <meta name="theme-color" content="#0b0f15" />
     <link rel="canonical" href="https://aigamedevarena.com/" />
     <link rel="icon" href="./assets/meta/logo-symbol.svg" type="image/svg+xml" />
-    <link rel="preload" href="./assets/images/pic05.webp" as="image" />
+    <link rel="preload" href="./assets/clips/hero-loop.webp" as="image" media="(prefers-reduced-motion: no-preference)" />
+    <link rel="preload" href="./assets/images/pic05.webp" as="image" media="(prefers-reduced-motion: reduce)" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="AI Game Dev Arena" />
     <meta
@@ -105,7 +106,10 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero__media" data-parallax-speed="-0.12" aria-hidden="true">
-          <img src="./assets/images/pic05.webp" alt="" fetchpriority="high" />
+          <picture>
+            <source srcset="./assets/images/pic05.webp" media="(prefers-reduced-motion: reduce)" />
+            <img src="./assets/clips/hero-loop.webp" alt="" fetchpriority="high" />
+          </picture>
         </div>
         <div class="hero__shade"></div>
         <img class="hero__mark" data-parallax-speed="0.16" src="./assets/meta/logo-symbol-transparent.svg" alt="" aria-hidden="true" />
