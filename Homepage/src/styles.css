@@ -311,10 +311,18 @@ input {
 .ticker__track {
   display: flex;
   width: max-content;
-  animation: ticker 28s linear infinite;
+  animation: ticker 24s linear infinite;
+}
+
+.ticker__group {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-around;
+  min-width: 100vw;
 }
 
 .ticker span {
+  flex: 0 0 auto;
   padding: 14px 26px;
   font-size: 13px;
   font-weight: 950;
