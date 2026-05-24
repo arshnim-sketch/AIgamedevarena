@@ -99,17 +99,83 @@
       .map(
         (game, index) => `
           <article class="game-card">
-            <img src="${game.clip}" alt="${escapeHtml(game.title)} 플레이 영상 클립" loading="lazy" />
+            <button class="game-card__media" type="button" data-video-id="${escapeHtml(game.videoId)}" data-video-title="${escapeHtml(game.title)}" aria-label="${escapeHtml(game.title)} 플레이 영상 보기">
+              <img src="${game.clip}" alt="${escapeHtml(game.title)} 플레이 영상 클립" loading="lazy" />
+              <span class="game-card__play" aria-hidden="true"></span>
+            </button>
             <div class="game-card__body">
               <span class="game-card__rank">${escapeHtml(game.rank)}</span>
               <h3>${escapeHtml(game.title)}</h3>
               <p>${escapeHtml(game.summary)}</p>
               <p>${game.tags.map(escapeHtml).join(" / ")}</p>
+              <button class="game-card__watch" type="button" data-video-id="${escapeHtml(game.videoId)}" data-video-title="${escapeHtml(game.title)}">Watch play video</button>
             </div>
           </article>
         `
       )
       .join("");
+  }
+
+  function renderVideoModal() {
+    document.body.insertAdjacentHTML(
+      "beforeend",
+      `
+        <div class="video-modal" id="video-modal" aria-hidden="true">
+          <button class="video-modal__backdrop" type="button" data-video-close aria-label="영상 닫기"></button>
+          <section class="video-modal__panel" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+            <div class="video-modal__bar">
+              <p id="video-modal-title">Play Video</p>
+              <button class="video-modal__close" type="button" data-video-close aria-label="영상 닫기">×</button>
+            </div>
+            <div class="video-modal__frame" id="video-modal-frame"></div>
+          </section>
+        </div>
+      `
+    );
+  }
+
+  function initVideoModal() {
+    const modal = byId("video-modal");
+    const title = byId("video-modal-title");
+    const frame = byId("video-modal-frame");
+    let lastFocus = null;
+
+    const close = () => {
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("is-video-open");
+      frame.innerHTML = "";
+      if (lastFocus) lastFocus.focus();
+    };
+
+    const open = (trigger) => {
+      const videoId = trigger.dataset.videoId;
+      const videoTitle = trigger.dataset.videoTitle || "Play Video";
+      if (!videoId) return;
+
+      lastFocus = trigger;
+      title.textContent = videoTitle;
+      frame.innerHTML = `
+        <iframe
+          title="${escapeHtml(videoTitle)} 플레이 영상"
+          src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0&modestbranding=1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      `;
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("is-video-open");
+      modal.querySelector(".video-modal__close").focus();
+    };
+
+    document.addEventListener("click", (event) => {
+      const trigger = event.target.closest("[data-video-id]");
+      if (trigger) open(trigger);
+      if (event.target.closest("[data-video-close]")) close();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && modal.getAttribute("aria-hidden") === "false") close();
+    });
   }
 
   function renderSteps() {
@@ -185,6 +251,8 @@
     renderParticipants();
     renderMedia();
     renderFaq();
+    renderVideoModal();
+    initVideoModal();
     initParallax();
   }
 

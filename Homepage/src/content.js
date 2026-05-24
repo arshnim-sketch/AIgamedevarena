@@ -25,6 +25,7 @@ window.AIGDA_CONTENT = {
       rank: "1st",
       title: "농작물을 지켜라",
       clip: "./assets/clips/game-1.webp",
+      videoId: "Oo83e0IOP1k",
       summary: "농작물을 방해 요소로부터 지키는 액션 디펜스 프로토타입.",
       tags: ["Defense", "Unity", "AI-assisted"]
     },
@@ -32,6 +33,7 @@ window.AIGDA_CONTENT = {
       rank: "2nd",
       title: "보리와 곰농부",
       clip: "./assets/clips/game-2.webp",
+      videoId: "U2c7nsVord8",
       summary: "곰농부 세계관을 기반으로 한 수확형 미션 게임.",
       tags: ["Mission", "Farm", "Character"]
     },
@@ -39,6 +41,7 @@ window.AIGDA_CONTENT = {
       rank: "3rd",
       title: "Farm Cafe",
       clip: "./assets/clips/game-3.webp",
+      videoId: "cWqvbGeCfvk",
       summary: "재료 선택과 주문 처리를 중심으로 한 카페 운영 프로토타입.",
       tags: ["Management", "2D", "Casual"]
     },
@@ -46,6 +49,7 @@ window.AIGDA_CONTENT = {
       rank: "4th",
       title: "우당탕탕 산지직송",
       clip: "./assets/clips/game-4.webp",
+      videoId: "PUunl4T7IxM",
       summary: "산지에서 목표량을 달성하는 배송/수집형 게임.",
       tags: ["Delivery", "Stage", "Arcade"]
     },
@@ -53,6 +57,7 @@ window.AIGDA_CONTENT = {
       rank: "5th",
       title: "헤이버니",
       clip: "./assets/clips/game-5.webp",
+      videoId: "6oGbuu8b5n8",
       summary: "동화적 비주얼과 캐릭터 중심의 인터랙티브 프로토타입.",
       tags: ["Story", "Character", "AI art"]
     }
