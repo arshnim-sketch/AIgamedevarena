@@ -193,7 +193,7 @@ input {
 }
 
 .hero__media {
-  transform: translate3d(0, var(--parallax-y), 0) scale(1.05);
+  transform: translate3d(0, var(--parallax-y), 0) scaleX(-1) scale(1.05);
 }
 
 .hero__media picture,
