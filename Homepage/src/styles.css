@@ -1092,12 +1092,24 @@ input {
 }
 
 .site-footer {
-  padding: var(--space-7) 0 var(--space-5);
+  position: relative;
+  padding: calc(var(--space-7) + 34px) 0 var(--space-5);
   color: var(--muted);
   background: #080b10;
 }
 
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 34px;
+  border-top: 1px solid rgba(248, 250, 252, 0.1);
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.045), transparent);
+  pointer-events: none;
+}
+
 .site-footer__inner {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: var(--space-4);
