@@ -10,14 +10,14 @@ window.AIGDA_CONTENT = {
   stats: [
     { value: "5.5h", label: "AI-assisted live build sprint" },
     { value: "5", label: "winning playable prototypes" },
-    { value: "Unity", label: "game engine workflow baseline" },
+    { value: "Open", label: "engine-flexible build format" },
     { value: "Media", label: "creator and journalist coverage" }
   ],
   gallery: [
     { src: "./assets/images/pic05.webp", alt: "AI Game Dev Arena Season 0 현장에서 참가자들이 개발 중인 모습" },
     { src: "./assets/images/pic02.webp", alt: "참가자가 완성한 게임을 현장에서 플레이테스트하는 모습" },
     { src: "./assets/images/pic03.webp", alt: "심사와 쇼케이스를 위해 참가자들이 모여 있는 모습" },
-    { src: "./assets/images/pic06.webp", alt: "노트북과 Unity 개발 화면이 놓인 개발 현장" },
+    { src: "./assets/images/pic06.webp", alt: "노트북과 게임 개발 화면이 놓인 개발 현장" },
     { src: "./assets/images/pic07.webp", alt: "AI 게임 개발 챌린지에 집중하고 있는 참가자들" }
   ],
   games: [
@@ -27,7 +27,7 @@ window.AIGDA_CONTENT = {
       clip: "./assets/clips/game-1.webp",
       videoId: "Oo83e0IOP1k",
       summary: "농작물을 방해 요소로부터 지키는 액션 디펜스 프로토타입.",
-      tags: ["Defense", "Unity", "AI-assisted"]
+      tags: ["Defense", "Live build", "AI-assisted"]
     },
     {
       rank: "2nd",
@@ -65,10 +65,10 @@ window.AIGDA_CONTENT = {
   steps: [
     {
       title: "Pre-onboarding",
-      text: "AI 도구, Unity MCP, 제작 환경, 제출 형식을 사전에 안내합니다."
+      text: "AI 도구, 제작 환경, 제출 형식을 사전에 안내합니다."
     },
     {
-      title: "Tool workflow sprint",
+      title: "AI production sprint",
       text: "코딩, 아트, 사운드, 기획을 돕는 AI 도구를 게임 제작 흐름에 연결합니다."
     },
     {
@@ -95,7 +95,7 @@ window.AIGDA_CONTENT = {
     },
     {
       title: "Creator / Media Partner",
-      text: "유니티 개발자 커뮤니티가 이해하는 언어로 사전 튜토리얼, 리뷰, 현장 콘텐츠를 만듭니다."
+      text: "게임 개발 커뮤니티가 이해하는 언어로 사전 튜토리얼, 리뷰, 현장 콘텐츠를 만듭니다."
     },
     {
       title: "Education Partner",
@@ -112,15 +112,15 @@ window.AIGDA_CONTENT = {
   ],
   participants: [
     "개발자, 디자이너, 아티스트, 기획자, 학생, 인디 창작자 대상",
-    "Unity 기반 제작 흐름과 AI 도구 활용 경험 우대",
+    "AI 도구 활용 경험이 있거나 빠르게 실험해보고 싶은 창작자 우대",
     "개인 또는 팀 참가 구조는 다음 시즌 포맷 확정 후 안내",
     "수상작은 홈페이지 쇼케이스와 파트너 미팅 자료에 노출"
   ],
   media: [
     {
       label: "고라니TV",
-      title: "AI vs 인간 유니티 개발 전쟁",
-      text: "Season 0의 진행 과정과 결과를 담은 유니티 개발 콘텐츠.",
+      title: "AI vs 인간 게임 개발 챌린지",
+      text: "Season 0의 진행 과정과 결과를 담은 개발 콘텐츠.",
       href: "https://youtu.be/IIA4xy-rt7k"
     },
     {

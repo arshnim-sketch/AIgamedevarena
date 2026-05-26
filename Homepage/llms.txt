@@ -1,6 +1,6 @@
 # AI Game Dev Arena
 
-AI Game Dev Arena is a live AI-native game development arena where makers use AI tools and Unity-based workflows to build playable game prototypes within a limited time.
+AI Game Dev Arena is a live AI-native game development arena where makers use AI tools to build playable game prototypes within a limited time.
 
 ## Core Positioning
 
@@ -12,7 +12,7 @@ AI Game Dev Arena is a live AI-native game development arena where makers use AI
 
 ## Season 0 Proof
 
-Season 0 was held on May 1, 2026 as a proof-of-format AI game development challenge. Participants built Unity-based playable games in a limited live sprint. The format gained reference value through Unity game development creator content, named developer participation, game-specialized media coverage, and winning playable prototypes.
+Season 0 was held on May 1, 2026 as a proof-of-format AI game development challenge. Participants built playable games in a limited live sprint. The format gained reference value through game development creator content, named developer participation, game-specialized media coverage, and winning playable prototypes.
 
 ## Partner Value
 
@@ -20,13 +20,13 @@ AI solution partners can gain real usage context, onboarding feedback, developer
 
 ## Participant Value
 
-Participants can experience an AI-assisted production workflow, complete playable game prototypes, gain portfolio material, and access showcase opportunities.
+Participants can experience an AI-assisted production format, complete playable game prototypes, gain portfolio material, and access showcase opportunities.
 
 ## Important Concepts
 
 - AI-native game developer
-- Unity MCP workflow
-- VARCO 3D / Sound / Voice as potential game content AI partner
+- Engine-flexible AI production format
+- AI content generation partners
 - Playable prototype focused challenge
 - Creator and media distribution
 - Post-event VOC and use-case report
