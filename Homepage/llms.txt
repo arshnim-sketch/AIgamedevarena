@@ -9,6 +9,7 @@ AI Game Dev Arena is a live AI-native game development arena where makers use AI
 - Category: AI game development festival, AI game jam, playable prototype showcase
 - Main audiences: AI solution partners, game companies, publishers, VCs, indie game developers, students, creators, developer influencers, game media
 - Primary homepage role: partner and AI conference understanding first, participant recruiting later through phase-based CTA changes
+- Locales: Korean (`/?lang=ko`), English (`/?lang=en`), Japanese (`/?lang=ja`), Simplified Chinese (`/?lang=zh`)
 
 ## Season 0 Proof
 
